@@ -16,7 +16,9 @@ class PlayButtonPage extends StatelessWidget {
           PagesStrings.appBarTitlePlayButtonPage,
         ),
       ),
-      body: MovieDetailPlayButton(),
+      body: Center(
+        child: MovieDetailPlayButton(),
+      ),
     );
   }
 }
