@@ -2,8 +2,8 @@ import '../constants/pages_strings.dart';
 import 'package:flutter/material.dart';
 
 class CenterWidgetPage extends StatelessWidget {
-  final Widget movieWidget;
   final String appBarTitle;
+  final Widget movieWidget;
 
   const CenterWidgetPage({
     Key? key,
@@ -19,7 +19,7 @@ class CenterWidgetPage extends StatelessWidget {
       backgroundColor: Colors.black,
       appBar: AppBar(
         title: Text(
-          appBarTitle,
+          PagesStrings.appBarTitleInfoPage,
         ),
       ),
       body: Center(
