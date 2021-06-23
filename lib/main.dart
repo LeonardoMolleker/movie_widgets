@@ -1,10 +1,12 @@
+import 'constants/pages_strings.dart';
+import 'exports/movie_widgets.dart';
+import 'pages/center_widget_page.dart';
+import 'movie_widgets/movie_details_info.dart';
+import 'movie_widgets/movie_details_overview.dart';
 import 'pages/play_button_page.dart';
 import 'constants/routes_constants.dart';
 import 'pages/actions_page.dart';
 import 'pages/image_widget_page.dart';
-import 'pages/info_page.dart';
-import 'pages/overview_page.dart';
-import 'pages/title_page.dart';
 import 'pages/home_page.dart';
 import 'package:flutter/material.dart';
 
@@ -28,12 +30,24 @@ class MyApp extends StatelessWidget {
       routes: {
         RoutesConstants.initialRoute: (context) => Home(),
         RoutesConstants.imageWidgetRoute: (context) => ImageWidgetPage(),
-        RoutesConstants.playButtonWidgetRoute: (context) =>
-            PlayButtonPage(),
+        RoutesConstants.playButtonWidgetRoute: (context) => PlayButtonPage(),
         RoutesConstants.actionsWidgetRoute: (context) => ActionsPage(),
-        RoutesConstants.infoWidgetRoute: (context) => InfoPage(),
-        RoutesConstants.overviewWidgetRoute: (context) => OverviewPage(),
-        RoutesConstants.titleWidgetRoute: (context) => TitlePage(),
+        RoutesConstants.infoWidgetRoute: (context) => CenterWidgetPage(
+              movieWidget: MovieDetailsInfo(),
+              appBarTitle: PagesStrings.appBarTitleInfoPage,
+            ),
+        RoutesConstants.overviewWidgetRoute: (context) => CenterWidgetPage(
+              movieWidget: MovieDetailsOverview(
+                overview: PagesStrings.overviewOfOverviewPage,
+              ),
+              appBarTitle: PagesStrings.appBarTitleOverviewPage,
+            ),
+        RoutesConstants.titleWidgetRoute: (context) => CenterWidgetPage(
+              movieWidget: MovieDetailsTitle(
+                title: PagesStrings.titleOfTitleWidget,
+              ),
+              appBarTitle: PagesStrings.appBarTitleOfTitlePage,
+            ),
       },
     );
   }

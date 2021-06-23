@@ -6,8 +6,8 @@ class FadeImageWidget extends StatelessWidget {
   final String defaultPath;
 
   const FadeImageWidget({
-    Key key,
-    this.posterPath,
+    Key? key,
+    this.posterPath = MovieConstants.defaultPoster,
     this.defaultPath = MovieConstants.defaultPoster,
   }) : super(key: key);
 
@@ -15,9 +15,7 @@ class FadeImageWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return FadeInImage.assetNetwork(
       placeholder: defaultPath,
-      image: posterPath != null
-          ? posterPath
-          : defaultPath,
+      image: posterPath,
       fit: BoxFit.cover,
     );
   }

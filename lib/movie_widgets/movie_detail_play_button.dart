@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class MovieDetailPlayButton extends StatelessWidget {
   const MovieDetailPlayButton({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override

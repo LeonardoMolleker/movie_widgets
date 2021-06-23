@@ -8,8 +8,8 @@ class HomeListView extends StatelessWidget {
   final List<ListViewTile> tiles;
 
   const HomeListView({
-    Key key,
-    this.tiles,
+    Key? key,
+    this.tiles = const [],
   }) : super(key: key);
 
   @override

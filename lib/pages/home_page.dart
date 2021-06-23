@@ -58,7 +58,7 @@ class Home extends StatelessWidget {
   ];
 
   Home({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override

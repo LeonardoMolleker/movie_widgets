@@ -1,3 +1,5 @@
+import '../movie_constants/movie_constants.dart';
+import 'default_image_widget.dart';
 import '../movie_constants/movie_dimensions.dart';
 import 'package:flutter/material.dart';
 
@@ -6,9 +8,9 @@ class MovieDetailImage extends StatelessWidget {
   final String heroTag;
 
   const MovieDetailImage({
-    Key key,
-    this.image,
-    this.heroTag,
+    Key? key,
+    this.image = const DefaultImage(),
+    this.heroTag = MovieConstants.heroMovieDetailTransitionTag,
   }) : super(key: key);
 
   @override

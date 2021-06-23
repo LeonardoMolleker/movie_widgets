@@ -6,7 +6,7 @@ class MovieDetailsActions extends StatelessWidget {
   final List<Icon> icons;
 
   const MovieDetailsActions({
-    Key key,
+    Key? key,
     this.spacerSize = MovieDimensions.movieDetailSixedBoxWidth,
     this.icons = const [
       Icon(

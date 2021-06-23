@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class ActionsPage extends StatelessWidget {
   const ActionsPage({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override

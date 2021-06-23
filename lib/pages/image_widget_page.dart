@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 
 class ImageWidgetPage extends StatelessWidget {
   const ImageWidgetPage({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -23,7 +23,6 @@ class ImageWidgetPage extends StatelessWidget {
             posterPath:
                 MovieConstants.uriPosterImage + TilesConstants.examplePath,
           ),
-          heroTag: MovieConstants.heroMovieDetailTransitionTag,
         ),
       ),
     );
