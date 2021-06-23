@@ -1,11 +1,10 @@
 import '../constants/pages_strings.dart';
-import '../movie_widgets/movie_details_info.dart';
 import 'package:flutter/material.dart';
 
-class InfoPage extends StatelessWidget {
-  const InfoPage({
-    Key key,
-  }) : super(key: key);
+class CenterWidgetPage extends StatelessWidget {
+  final Widget movieWidget;
+
+  const CenterWidgetPage({Key key, this.movieWidget}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,11 +16,7 @@ class InfoPage extends StatelessWidget {
         ),
       ),
       body: Center(
-        child: MovieDetailsInfo(
-          language: PagesStrings.defaultLanguage,
-          date: DateTime.now().year.toString(),
-          rating: PagesStrings.defaultRating,
-        ),
+        child: movieWidget,
       ),
     );
   }
