@@ -1,13 +1,17 @@
+import 'package:exported_movie_widgets/exports/movie_widgets.dart';
+
 import '../movie_constants/movie_dimensions.dart';
 import 'package:flutter/material.dart';
 
 class MovieDetailImage extends StatelessWidget {
-  final Widget image;
+  final String imagePath;
+  final String defaultPath;
   final String heroTag;
 
   const MovieDetailImage({
     Key key,
-    this.image,
+    this.imagePath,
+    this.defaultPath = MovieConstants.defaultPoster,
     this.heroTag,
   }) : super(key: key);
 
@@ -18,7 +22,11 @@ class MovieDetailImage extends StatelessWidget {
       child: Container(
         height: MovieDimensions.movieDetailContainerHeight,
         child: Center(
-          child: image,
+          child: FadeInImage.assetNetwork(
+            placeholder: defaultPath,
+            image: imagePath != null ? imagePath : defaultPath,
+            fit: BoxFit.cover,
+          ),
         ),
       ),
     );
