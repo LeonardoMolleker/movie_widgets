@@ -2,8 +2,8 @@ import '../movie_constants/movie_constants.dart';
 import '../movie_constants/movie_dimensions.dart';
 import 'package:flutter/material.dart';
 
-class MovieDetailPlayButton extends StatelessWidget {
-  const MovieDetailPlayButton({
+class MovieDetailBackButton extends StatelessWidget {
+  const MovieDetailBackButton({
     Key? key,
   }) : super(key: key);
 
@@ -27,11 +27,11 @@ class MovieDetailPlayButton extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(
-              Icons.play_arrow,
+              Icons.arrow_back,
               color: Colors.black,
             ),
             Text(
-              MovieConstants.playButtonText,
+              MovieConstants.backButtonText,
               style: TextStyle(
                 color: Colors.black,
               ),

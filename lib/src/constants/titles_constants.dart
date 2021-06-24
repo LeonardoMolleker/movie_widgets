@@ -1,4 +1,4 @@
-abstract class TilesConstants {
+abstract class TitlesConstants {
   static const String imageWidgetTitle = "Movie detail image widget";
   static const String imageWidgetSubtitle =
       "Fetch an image in a determinated path, if doesn't get somenthing shows a default image";

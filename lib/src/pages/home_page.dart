@@ -1,6 +1,6 @@
 import '../constants/pages_strings.dart';
 import '../constants/routes_constants.dart';
-import '../constants/tiles_constants.dart';
+import '../constants/titles_constants.dart';
 import '../widgets/list_view_tile.dart';
 import '../widgets/home_list_view.dart';
 import 'package:flutter/material.dart';
@@ -11,48 +11,48 @@ class Home extends StatelessWidget {
       icon: Icon(
         Icons.image,
       ),
-      title: TilesConstants.imageWidgetTitle,
-      subtitle: TilesConstants.imageWidgetSubtitle,
+      title: TitlesConstants.imageWidgetTitle,
+      subtitle: TitlesConstants.imageWidgetSubtitle,
       routeName: RoutesConstants.imageWidgetRoute,
     ),
     ListViewTile(
       icon: Icon(
         Icons.play_arrow,
       ),
-      title: TilesConstants.playButtonWidgetTitle,
-      subtitle: TilesConstants.playButtonWidgetSubtitle,
+      title: TitlesConstants.playButtonWidgetTitle,
+      subtitle: TitlesConstants.playButtonWidgetSubtitle,
       routeName: RoutesConstants.playButtonWidgetRoute,
     ),
     ListViewTile(
       icon: Icon(
         Icons.favorite_border,
       ),
-      title: TilesConstants.actionsWidgetTitle,
-      subtitle: TilesConstants.actionsWidgetSubtitle,
+      title: TitlesConstants.actionsWidgetTitle,
+      subtitle: TitlesConstants.actionsWidgetSubtitle,
       routeName: RoutesConstants.actionsWidgetRoute,
     ),
     ListViewTile(
       icon: Icon(
         Icons.info_outline,
       ),
-      title: TilesConstants.infoWidgetTitle,
-      subtitle: TilesConstants.infoWidgetSubtitle,
+      title: TitlesConstants.infoWidgetTitle,
+      subtitle: TitlesConstants.infoWidgetSubtitle,
       routeName: RoutesConstants.infoWidgetRoute,
     ),
     ListViewTile(
       icon: Icon(
         Icons.description,
       ),
-      title: TilesConstants.overviewWidgetTitle,
-      subtitle: TilesConstants.overviewWidgetSubtitle,
+      title: TitlesConstants.overviewWidgetTitle,
+      subtitle: TitlesConstants.overviewWidgetSubtitle,
       routeName: RoutesConstants.overviewWidgetRoute,
     ),
     ListViewTile(
       icon: Icon(
         Icons.title,
       ),
-      title: TilesConstants.titleWidgetTitle,
-      subtitle: TilesConstants.titleWidgetSubtitle,
+      title: TitlesConstants.titleWidgetTitle,
+      subtitle: TitlesConstants.titleWidgetSubtitle,
       routeName: RoutesConstants.titleWidgetRoute,
     )
   ];

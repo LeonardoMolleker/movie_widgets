@@ -1,4 +1,4 @@
-import '../constants/tiles_constants.dart';
+import '../constants/titles_constants.dart';
 import 'package:flutter/material.dart';
 
 class ListViewTile extends StatelessWidget {
@@ -9,9 +9,9 @@ class ListViewTile extends StatelessWidget {
 
   const ListViewTile({
     Key? key,
-    this.title = TilesConstants.defaultTileTitle,
-    this.subtitle = TilesConstants.defaultTileSubtitle,
-    this.routeName = TilesConstants.defaultTileRouteName,
+    this.title = TitlesConstants.defaultTileTitle,
+    this.subtitle = TitlesConstants.defaultTileSubtitle,
+    this.routeName = TitlesConstants.defaultTileRouteName,
     this.icon = const Icon(
       Icons.error,
     ),

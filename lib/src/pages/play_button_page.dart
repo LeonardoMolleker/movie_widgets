@@ -1,5 +1,5 @@
+import '../movie_widgets/movie_detail_back_button.dart';
 import '../constants/pages_strings.dart';
-import '../movie_widgets/movie_detail_play_button.dart';
 import 'package:flutter/material.dart';
 
 class PlayButtonPage extends StatelessWidget {
@@ -17,7 +17,7 @@ class PlayButtonPage extends StatelessWidget {
         ),
       ),
       body: Center(
-        child: MovieDetailPlayButton(),
+        child: MovieDetailBackButton(),
       ),
     );
   }
