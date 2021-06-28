@@ -1,3 +1,4 @@
+import '../movie_constants/movie_constants.dart';
 import '../movie_constants/movie_dimensions.dart';
 import 'package:flutter/material.dart';
 
@@ -5,8 +6,8 @@ class MovieDetailsOverview extends StatelessWidget {
   final String overview;
 
   const MovieDetailsOverview({
-    Key key,
-    this.overview,
+    Key? key,
+    this.overview = MovieConstants.defaultOverview,
   }) : super(key: key);
 
   @override

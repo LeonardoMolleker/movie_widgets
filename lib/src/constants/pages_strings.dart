@@ -7,8 +7,8 @@ abstract class PagesStrings {
   static const String overviewOfOverviewPage =
       "This text displays the overview of a movie.";
   static const String appBarTitleInfoPage = "Movie info page";
-  static const String defaultLanguage = "us";
-  static const String defaultRating = "8.7";
   static const String appBarTitleHome = "Movies widgets";
   static const String appBarTitleActionsPage = "Actions page";
+  static const String defaultMovieWidgetText = "Nothing to display";
+  static const String defaultAppBarTitle = "No title for the screen";
 }

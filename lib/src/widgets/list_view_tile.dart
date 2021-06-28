@@ -1,3 +1,4 @@
+import '../constants/titles_constants.dart';
 import 'package:flutter/material.dart';
 
 class ListViewTile extends StatelessWidget {
@@ -7,11 +8,13 @@ class ListViewTile extends StatelessWidget {
   final Icon icon;
 
   const ListViewTile({
-    Key key,
-    this.title,
-    this.subtitle,
-    this.routeName,
-    this.icon,
+    Key? key,
+    this.title = TitlesConstants.defaultTileTitle,
+    this.subtitle = TitlesConstants.defaultTileSubtitle,
+    this.routeName = TitlesConstants.defaultTileRouteName,
+    this.icon = const Icon(
+      Icons.error,
+    ),
   }) : super(key: key);
 
   @override

@@ -1,4 +1,4 @@
-import '../constants/tiles_constants.dart';
+import '../constants/titles_constants.dart';
 import '../movie_constants/movie_constants.dart';
 import '../constants/measures_constants.dart';
 import 'list_view_tile.dart';
@@ -8,8 +8,8 @@ class HomeListView extends StatelessWidget {
   final List<ListViewTile> tiles;
 
   const HomeListView({
-    Key key,
-    this.tiles,
+    Key? key,
+    this.tiles = const [],
   }) : super(key: key);
 
   @override
@@ -29,7 +29,7 @@ class HomeListView extends StatelessWidget {
   List<Widget> buildListView(List<ListViewTile> tiles) {
     List<Widget> listView = [];
     tiles.forEach((tile) {
-      if (tile.title == TilesConstants.imageWidgetTitle) {
+      if (tile.title == TitlesConstants.imageWidgetTitle) {
         listView.add(
           Hero(
             tag: MovieConstants.heroMovieDetailTransitionTag,

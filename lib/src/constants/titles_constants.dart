@@ -1,4 +1,4 @@
-abstract class TilesConstants {
+abstract class TitlesConstants {
   static const String imageWidgetTitle = "Movie detail image widget";
   static const String imageWidgetSubtitle =
       "Fetch an image in a determinated path, if doesn't get somenthing shows a default image";
@@ -15,4 +15,7 @@ abstract class TilesConstants {
   static const String titleWidgetTitle = "Movie detail title";
   static const String titleWidgetSubtitle = "Show the title of the movie";
   static const String examplePath = "/4q2hz2m8hubgvijz8Ez0T2Os2Yv.jpg";
+  static const String defaultTileTitle = "No title for this widget.";
+  static const String defaultTileSubtitle = "No subtitle for this widget.";
+  static const String defaultTileRouteName = "/";
 }

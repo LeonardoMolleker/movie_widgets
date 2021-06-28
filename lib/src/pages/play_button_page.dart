@@ -1,10 +1,10 @@
+import '../movie_widgets/movie_detail_back_button.dart';
 import '../constants/pages_strings.dart';
-import '../movie_widgets/movie_details_actions.dart';
 import 'package:flutter/material.dart';
 
-class ActionsPage extends StatelessWidget {
-  const ActionsPage({
-    Key key,
+class PlayButtonPage extends StatelessWidget {
+  const PlayButtonPage({
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -13,11 +13,11 @@ class ActionsPage extends StatelessWidget {
       backgroundColor: Colors.black,
       appBar: AppBar(
         title: Text(
-          PagesStrings.appBarTitleActionsPage,
+          PagesStrings.appBarTitlePlayButtonPage,
         ),
       ),
       body: Center(
-        child: MovieDetailsActions(),
+        child: MovieDetailBackButton(),
       ),
     );
   }

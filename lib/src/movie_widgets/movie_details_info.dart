@@ -8,10 +8,10 @@ class MovieDetailsInfo extends StatelessWidget {
   final String rating;
 
   const MovieDetailsInfo({
-    Key key,
-    this.language,
-    this.date,
-    this.rating,
+    Key? key,
+    this.language = MovieConstants.defaultLanguage,
+    this.date = MovieConstants.defaultDate,
+    this.rating = MovieConstants.defaultRating,
   }) : super(key: key);
 
   @override
