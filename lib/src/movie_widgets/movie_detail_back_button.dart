@@ -22,7 +22,11 @@ class MovieDetailBackButton extends StatelessWidget {
                 Colors.white,
           ),
         ),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pop(
+            context,
+          );
+        },
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
