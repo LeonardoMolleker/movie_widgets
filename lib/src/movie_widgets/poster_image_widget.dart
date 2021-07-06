@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../movie_widgets.dart';
+import '../../exported_movie_widgets.dart';
 import 'image_type.dart';
 
 class PosterImage extends StatelessWidget {

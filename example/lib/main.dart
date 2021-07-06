@@ -1,12 +1,5 @@
-import 'pages/actions_page.dart';
-import 'pages/center_widget_page.dart';
-import 'pages/home_page.dart';
-import 'pages/image_widget_page.dart';
-import 'pages/play_button_page.dart';
+import 'package:exported_movie_widgets/exported_movie_widgets.dart';
 import 'package:flutter/material.dart';
-import 'constants/pages_strings.dart';
-import 'constants/routes_constants.dart';
-import 'movie_widgets.dart';
 
 void main() {
   runApp(

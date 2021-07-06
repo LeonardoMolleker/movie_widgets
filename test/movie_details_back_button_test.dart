@@ -1,8 +1,8 @@
-import '../lib/src/movie_widgets.dart';
+import 'package:exported_movie_widgets/exported_movie_widgets.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter/material.dart';
 import 'build_widget.dart';
-import '../lib/src/movie_constants/movie_constants.dart';
+
 
 void main() {
   testWidgets("Should display a button to go back", (tester) async {

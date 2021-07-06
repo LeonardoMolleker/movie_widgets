@@ -1,6 +1,5 @@
-import '../lib/src/movie_widgets.dart';
+import 'package:exported_movie_widgets/exported_movie_widgets.dart';
 import 'package:flutter_test/flutter_test.dart';
-import '../lib/src/movie_constants/movie_constants.dart';
 import 'build_widget.dart';
 
 void main() {
