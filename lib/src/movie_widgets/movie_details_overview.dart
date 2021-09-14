@@ -4,10 +4,12 @@ import 'package:flutter/material.dart';
 
 class MovieDetailsOverview extends StatelessWidget {
   final String overview;
+  final double fontSize;
 
   const MovieDetailsOverview({
     Key? key,
     this.overview = MovieConstants.defaultOverview,
+    this.fontSize = MovieDimensions.movieDetailOverviewFontSize,
   }) : super(key: key);
 
   @override
@@ -23,7 +25,7 @@ class MovieDetailsOverview extends StatelessWidget {
         overview,
         style: TextStyle(
           color: Colors.white,
-          fontSize: MovieDimensions.movieDetailOverviewFontSize,
+          fontSize: fontSize,
         ),
       ),
     );

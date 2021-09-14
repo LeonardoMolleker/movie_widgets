@@ -6,12 +6,14 @@ class MovieDetailsInfo extends StatelessWidget {
   final String language;
   final String date;
   final String rating;
+  final double fontSize;
 
   const MovieDetailsInfo({
     Key? key,
     this.language = MovieConstants.defaultLanguage,
     this.date = MovieConstants.defaultDate,
     this.rating = MovieConstants.defaultRating,
+    this.fontSize = MovieDimensions.movieDetailInfoFontSize,
   }) : super(key: key);
 
   @override
@@ -31,7 +33,7 @@ class MovieDetailsInfo extends StatelessWidget {
         style: TextStyle(
           color: Colors.white,
           wordSpacing: MovieDimensions.movieDetailInfoWordSpacing,
-          fontSize: MovieDimensions.movieDetailInfoFontSize,
+          fontSize: fontSize,
         ),
       ),
     );
