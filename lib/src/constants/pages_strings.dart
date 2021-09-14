@@ -11,4 +11,5 @@ abstract class PagesStrings {
   static const String appBarTitleActionsPage = "Actions page";
   static const String defaultMovieWidgetText = "Nothing to display";
   static const String defaultAppBarTitle = "No title for the screen";
+  static const String snackBarText = "Coming soon...";
 }
