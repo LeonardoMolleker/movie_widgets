@@ -1,6 +1,6 @@
 abstract class MovieConstants {
   static const String uriPosterImage = "https://image.tmdb.org/t/p/original";
-  static const String defaultPoster = "assets/default-thumb.png";
+  static const String defaultPoster = "assets/default_thumb.png";
   static const String errorPoster = "assets/error.png";
   static const String movieDetailLanguage = "Language: ";
   static const String movieDetailDate = " - Date: ";
